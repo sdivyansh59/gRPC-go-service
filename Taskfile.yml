@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+  gen_protoc:
+    desc: "generte pb file"
+    cmds:
+      - protoc --go_out=. --go-grpc_out=. proto/greet.proto
+    
