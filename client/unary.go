@@ -8,7 +8,6 @@ import (
 	pb "github.com/sdivyansh59/grpc_basic_service/proto"
 )
 
-
 func callSayHello(client pb.GreetServiceClient) {
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
